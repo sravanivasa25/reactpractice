@@ -2,7 +2,6 @@
   "name": "ep-2",
   "version": "1.0.0",
   "description": "react practice",
-  "main": "app.js",
   "scripts": {
     "test": "jest"
   },
@@ -21,5 +20,9 @@
   "homepage": "https://github.com/sravanivasa25/reactpractice#readme",
   "devDependencies": {
     "parcel": "^2.14.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }

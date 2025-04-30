@@ -15,3 +15,30 @@ npm install -D parcel--------here -D means dev dependency,once it is installed i
 -->package-lock.json--->keeps track of what exact version which is installed.
 --->transitive dependency:  if we install just pracel so many dependencies are come in node-modules bocz in order to execute pracel it needs lot of other dependencies and those modules itself have some other dependencies that is why so many modules/folders came in node-modules.this is called transitive dependency.
 ---->node-modules is very big.we are not going to do put node-modules on git/production.we put it in gitignore.
+why bcoz we can re-generate the node-modules by using package.json and package-lock.json by simply npm install simply all dependencies are installed in the node-modules.
+npx parcel index.html------to run the appln
+npx means executing the package
+for installing we use npm install like way to execute any package we will use npx.
+
+
+first we use cdn links to get react into our app but this is not a good way,y bcoz fetching from cdn is costly operation,instead of that by using npm we will get react into our appln.
+if it is in our node-modules & package.json it is easy get it and if any updated version are come they can be easily installed.
+
+parcel:
+
+-gives devBuild
+-local server
+-automatic refreshing the browser---called as hot module replacement(HMR)
+-uses file watching algorithm---keeps an eye on every file as soon as changes are done it will refreshes the browser
+-faster builds bcoz it will do cacheing
+-also do image optimization
+-minification of our files--it will do bundling or optimize
+-compress the 
+-consistent hashing
+-code splitting
+-differtial bundling---when the app is hosted our app can be opened in any browsers it will give differential bundlers to support in older browser also.
+-good error suggestions means goood error handling
+--it gives a way to host on app on https also.
+-tree shaking alog--suppose if we have hundred functions we are only using some ,it will remove the unused code.
+--diff build for development and production.
+Dist folder---when we execute the npx parcel it minifies the code put it in dist folder
