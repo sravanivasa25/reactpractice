@@ -1,0 +1,17 @@
+npm--not node package manager---npm does not have abbrivation
+it manages the packages.it is a standard repository of all kind of packages,libraries.
+to add npm to our project we will use npm init
+package.json----all the list of dependecies are listed are here.version of each package is stored here.it is a configration for npm.
+Bundler: whole code is compressed,cleaned,minified before going to production it is done by using bundler.
+ex: webpack,veet,parcer,babel
+there r 2 types of dependecies an app can have
+1.dev dependency-------require for development phase
+2. normal dependency-----using in production also
+in this we are using parcel bundler
+as dev dependency
+npm install -D parcel--------here -D means dev dependency,once it is installed it is displayed in the package.json along with its installed version and under the dev dependencies.
+^---caret,if version is caret if new version is relased if we put caret it will automatically updated to new minor version,if it is major version it will not update.
+~--tilde-------it will automatically updates the major version also. always put ^.
+-->package-lock.json--->keeps track of what exact version which is installed.
+--->transitive dependency:  if we install just pracel so many dependencies are come in node-modules bocz in order to execute pracel it needs lot of other dependencies and those modules itself have some other dependencies that is why so many modules/folders came in node-modules.this is called transitive dependency.
+---->node-modules is very big.we are not going to do put node-modules on git/production.we put it in gitignore.
